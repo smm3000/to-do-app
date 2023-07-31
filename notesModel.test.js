@@ -6,3 +6,11 @@ describe('Notes model class', () => {
        expect(notes.getNotes()).toEqual([]);
     });
 });
+
+describe('Notes model class', () => {
+    it('addes a note', () => {
+        const notes = new NotesModel();
+        notes.addNotes('Test Note');
+        expect(notes.getNotes()).toEqual(['Test Note']);
+    });
+});
